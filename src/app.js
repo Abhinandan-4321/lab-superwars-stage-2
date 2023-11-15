@@ -39,10 +39,10 @@ const initPlayers = (players) => {
         }
 
         else if(i%2 != 0){
-            detailedPlayers[i].type = "villian"
+            detailedPlayers[i].type = "villain"
         }
     }
-
+    console.log(detailedPlayers)
     return detailedPlayers;
 }
 
@@ -70,10 +70,11 @@ const buildPlayers = (players, type) => {
             <div class="strength">${players[i].strength}</div>
             </div>`
             fragment += playerhtml;
+            
         }
     }
 
-
+console.log(fragment)
     return fragment;
 }
 // Display players in HTML
